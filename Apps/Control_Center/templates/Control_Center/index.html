@@ -5,13 +5,13 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
       
-        <title>DevFolio Bootstrap Portfolio Template - Index</title>
+        <title>Aranda</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
       
         <!-- Favicons -->
-        <link href="{% static 'Control_Center/assets/img/favicon.png' %}" rel="icon">
-        <link href="{% static 'Control_Center/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+        <link href="{% static 'Control_Center/assets/img/logo.png' %}" rel="icon">
+        <link href="{% static 'Control_Center/assets/img/logo.png' %}" rel="apple-touch-icon">
       
         <!-- Vendor CSS Files -->
         <link href="{% static 'Control_Center/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -32,34 +32,16 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+      
+     
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <img src="static/Control_Center/assets/img/logo.png"  >
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -75,8 +57,8 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Morgan Freeman</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+          <h1 class="hero-title mb-4">I am Liván Aranda</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Backend Developer,Django Lover,Positive Guy"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -96,36 +78,83 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="static/Control_Center/assets/img/about.jpg" class="img-fluid rounded b-shadow-a" alt="">
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
-                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                      <div class="about-info mt-3">
+                        <p><span class="title-s">Name: </span> <span>Liván Aranda González</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Backend Developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>livanar00@gmail.com</span></p>
+                        <p><span class="title-s">Phone (Spain): </span> <span>(+34) 641-05-50-51</span></p>
+                       <!-- <p><span class="title-s">Phone (Cuba): </span> <span>(+53) 5373-27-81</span></p>-->
                       </div>
                     </div>
                   </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>HTML</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="skill-mf mt-4 ">
+                    <p class="title-s" >Skills:</p>
+
+                    <div class="container mt-3">
+
+                        <div class="row m-2">
+
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-DJANGO-blue?style=for-the-badge&logo=django" /></div>
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-DJANGO CMS-blue?style=for-the-badge&logo=django" /></div>
+                            
+                            
+
+                        </div>
+
+                        <div class="row m-2">
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" />  </div>
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-JAVASCRIPT-blue?style=for-the-badge&logo=javascript&logoColor=white" /> </div>
+
+                        </div>
+
+
+                        <div class="row m-2">
+
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-HTML5-blue?style=for-the-badge&logo=html5&logoColor=white" /> </div>
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-Visual Studio Code-blue?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />  </div>
+
+                        </div>
+
+
+                        <div class="row m-2">
+
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-MySQL-blue?style=for-the-badge&logo=mysql&logoColor=white" /> </div>
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-SQL LITE-blue?style=for-the-badge&logo=SQLite&logoColor=white" />  </div>
+
+                        </div>
+
+                        <div class="row m-2">
+
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-Python-blue?style=for-the-badge&logo=python&logoColor=white" />  </div>                            
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-Git-blue?style=for-the-badge&logo=git&logoColor=white" />  </div>
+                        </div>
+
+                        <div class="row m-2">
+
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-GitHub-blue?style=for-the-badge&logo=GitHub&logoColor=white" />  </div>                            
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-Heroku-blue?style=for-the-badge&logo=Heroku&logoColor=white" />  </div>
+                        </div>
+
+                        <div class="row m-2">
+
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-Celery-blue?style=for-the-badge&logo=Celery&logoColor=white" />  </div>                            
+                            <div class="col-5 m-2"><img alt="" src="https://img.shields.io/badge/-Git-blue?style=for-the-badge&logo=git&logoColor=white" />  </div>
+                        </div>
                     </div>
-                    <span>CSS3</span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>PHP</span> <span class="pull-right">50%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+
+                    
+ 
+                    
+                    
+                    
+                    
+                    
+                    
+                  
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -135,22 +164,44 @@
                         About me
                       </h5>
                     </div>
+            
                     <p class="lead">
-                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-                      imperdiet et, porttitor
-                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                      porttitor accumsan tincidunt.
+                      My name is Livan Aranda. I was born on october,1999.
                     </p>
+                   
+                    
                     <p class="lead">
-                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                      porttitor volutpat. Vestibulum
-                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                        <strong>Nationality</strong>: Cuban
                     </p>
+
                     <p class="lead">
-                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                      Nulla porttitor accumsan
-                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                        <strong>Citizenship</strong>: Cuban and Spanish.
                     </p>
+
+                    <p class="lead">
+                        I lived in cuba until 2020, I have lived in Spain since then. 
+                    </p>
+                     
+                    <p class="lead">
+                        I studied at the university of computer science in Cuba (UCI)(Universidad de las Ciencias Informaticas)
+                    </p>
+
+                    <p class="lead mt-4"><strong>Why are you hire me:</strong></p>
+                    
+                    <p class="lead">
+                        
+                        <ul>
+                            <li class="lead">I’m a good programmer. </li>
+                        
+                            <li class="lead">I’m a super constant person,who doesn’t stop until I solve any problem that may arise. </li>
+                            <li class="lead">I am always learning, improving and surpassing myself as a developer and as a human being.  </li>
+                            <li class="lead">I have the ability to interact with people, making teamwork an easy task for me. </li>
+                            <li class="lead">I do well under pressure.  </li>
+                            <li class="lead">You will always be guaranteed sincerity and trust on my part, since in my philosophy of life I consider that the most important thing a person can have is his word.</li>
+                        </ul>
+                        
+                        
+                     </p>
                   </div>
                 </div>
               </div>
@@ -160,169 +211,8 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Design</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Photography</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Graphic Design</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Marketing Services</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
+    
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
@@ -334,24 +224,26 @@
                 Portfolio
               </h3>
               <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                A small part of my projects
               </p>
               <div class="line-mf"></div>
             </div>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-md-4">
+       
+          <div class="col-md-4">   
             <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="static/Control_Center/assets/img/projects/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                  <img src="static/Control_Center/assets/img/projects/1.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <h2 class="w-title">Blog-Django-CMS</h2>
                     <div class="w-more">
                       <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
                     </div>
@@ -365,17 +257,19 @@
               </div>
             </div>
           </div>
+
+
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="static/Control_Center/assets/img/projects/2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                  <img src="static/Control_Center/assets/img/projects/2.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <h2 class="w-title">Telegram Bot (Store)</h2>
                     <div class="w-more">
                       <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
                     </div>
@@ -389,17 +283,19 @@
               </div>
             </div>
           </div>
+
+
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="static/Control_Center/assets/img/projects/3.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                  <img src="static/Control_Center/assets/img/projects/3.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <h2 class="w-title">Mula</h2>
                     <div class="w-more">
                       <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
                     </div>
@@ -413,17 +309,19 @@
               </div>
             </div>
           </div>
+
+
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="static/Control_Center/assets/img/projects/4.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                  <img src="static/Control_Center/assets/img/projects/4.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <h2 class="w-title">My Portfolio</h2>
                     <div class="w-more">
                       <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
                     </div>
@@ -437,226 +335,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
         </div>
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Xavi Alonso</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Marta Socrate</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
+  
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(static/Control_Center/assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
