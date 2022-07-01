@@ -18,6 +18,14 @@
         <link href="{% static 'Control_Center/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
         <link href="{% static 'Control_Center/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
         <link href="{% static 'Control_Center/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+        <!-- Sweet Alert -->
+        <link rel="stylesheet" href="{% static 'Control_Center/assets/vendor/sweetalert2/sweetalert2.min.css'   %}">
+
+        <!-- Jquery Confirm CSS Files -->
+        <link rel="stylesheet" href="{% static 'Control_Center/assets/vendor/Jquery-confirm/dist/jquery-confirm.min.css'%}">
+
+
       
         <!-- Template Main CSS File -->
         <link href="{% static 'Control_Center/assets/css/style.css' %}" rel="stylesheet">
@@ -355,40 +363,51 @@
                   <div class="col-md-6">
                     <div class="title-box-2">
                       <h5 class="title-left">
-                        Send Message Us
+                        Send me a message:
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="" method="post" class="email-form">
+
                         <div class="row">
+                          
+
+                          <!--Your Name-->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input type="text" name="Name" placeholder="Your Name" maxlength="100" minlength="10" required class="form-control" id="id_Name">
                             </div>
                           </div>
+
+                          <!--Email-->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="email" name="Email" placeholder="Your Email" maxlength="100" minlength="10" class="form-control" required id="id_Email">
+        
                             </div>
                           </div>
+
+                          <!--Subject-->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              <input type="text" name="Subject" placeholder="Subject" maxlength="100" minlength="10" class="form-control" required id="id_Subject">
                             </div>
                           </div>
+
+                          <!--Message-->
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea name="Text_Message" cols="40" rows="8" placeholder="Message" maxlength="400" minlength="10" class="form-control" required id="id_Text_Message"></textarea>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
+
+                          
+
+                          <div class="col-md-12 mt-3 text-center">
                             <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            
                           </div>
+
                         </div>
                       </form>
                     </div>
@@ -401,23 +420,20 @@
                     </div>
                     <div class="more-info">
                       <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                        expedita aperiam aliquid at.
-                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                        mollitia inventore?
+                        Anything you need, feel free to contact me:
                       </p>
                       <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
-                        <li><span class="bi bi-envelope"></span> contact@example.com</li>
+                        <li><span class="bi bi-geo-alt"></span> Spain,Madrid,Alcorcon,Colon street #15 PO 3D</li>
+                        <li><span class="bi bi-phone"></span> (+34) 641-055051</li>
+                        <li><span class="bi bi-envelope"></span> livanar00@gmail.com</li>
                       </ul>
                     </div>
                     <div class="socials">
                       <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/LivanAG"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/chanchy99/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://twitter.com/ArandaLivan"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/livan-aranda-4ba1671bb/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -426,6 +442,7 @@
             </div>
           </div>
         </div>
+       
       </div>
     </section><!-- End Contact Section -->
 
@@ -469,7 +486,105 @@
   <script src="{% static 'Control_Center/assets/vendor/typed.js/typed.min.js' %}"></script>
   <script src="{% static 'Control_Center/assets/vendor/php-email-form/validate.js' %}"></script>
 
+  <!-- jQuery -->
+  <script src="{% static 'Control_Center/assets/vendor/jquery/jquery.min.js'   %}"></script>
+
+  <!-- Sweet Alert -->
+  <script type="text/javascript" src="{% static 'Control_Center/assets/vendor/sweetalert2/sweetalert2.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'Control_Center/assets/vendor/sweetalert_Mio/sweetaler2.js' %}"></script>
+  <!-- Jquery Confirm JS Files -->
+  <script src="{% static 'Control_Center/assets/vendor/Jquery-confirm/dist/jquery-confirm.min.js'%}"></script>
+
   <!-- Template Main JS File -->
   <script src="{% static 'Control_Center/assets/js/main.js' %}"></script>
+
+  <!-- Template Ajax JS File -->
+  <script src="{% static 'Control_Center/assets/js/ajax.js' %}"></script>
+
+  <script>
+
+    $("form").on("submit",function(e){
+    
+    e.preventDefault();
+    var parametros = new FormData(this) // la diferencia de esta linea y la de arriba es que esta sirve si el form tiene archivos imagenes
+    
+      
+
+      $.confirm({
+        theme: 'material',
+        title: 'Confirm!',
+       
+    
+        content: 'Esta a punto de enviar un correo a Livan Aranda. Desea Continuar?',
+    
+        columnClass:"small",
+        typeAnimated:true,
+        cancelButtonClass:'btn-primary',
+        draggable:true,
+    
+        buttons: {
+            info: {
+                text:'si',
+                btnClass: 'btn-blue',
+                action: function(){
+    
+                    $.ajax({
+                        url:window.location.pathname,
+                        type:"POST",
+                        data:parametros,
+                        dataType:'json',
+                        processData: false,  // este parametro es obligado ponerlo cuando usas FormData
+                        contentType: false   // este parametro es obligado ponerlo cuando usas FormData
+        
+        
+                        }).done(function(data) {
+    
+                           if(!data.hasOwnProperty('error')){
+                            Swal.fire({
+                            text:'Su correo electronico ha sido envidado satisfactoriamente!',
+                            icon: 'success',
+                            title: 'Alert!',
+                            showConfirmButton: true,
+                            onClose:()=>{location.reload()}
+                          }) 
+
+                            return false;
+                           }
+                           else{
+                            console.log(data.error)
+                            //MensajeError(acc,data.error);
+                            
+                            
+                           }
+                            
+                           
+                        }).fail(function( jqXHR,textStatus,errorThrown) {
+                                           
+                        }).always(function(data) {}); 
+        
+               
+                
+                            
+            
+                }
+            
+           
+            },
+            danger: {
+                text:'no',
+                btnClass: 'btn-red any-other-class', // multiple classes.
+                
+            }
+        }
+    });
+  
+    })
+  
+  
+    
+     
+  
+  </script>
+
 </body>
 </html>

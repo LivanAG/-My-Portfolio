@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@+upv*fdoxq%^^v^xqgp0e8kf=@*j0iq9un^$%r7&x67+(kk*!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["https://myportfoliopersonal.herokuapp.com/"]
 
@@ -133,6 +133,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+#------------------ Configuracion Email--------------------------------------------------------------------------------------
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT = 587
+EMAIL_HOST_USER="marcelosking00@gmail.com"
+EMAIL_HOST_PASSWORD="qlsvmumalzndsxgx"
+
+
+#------------------ END Configuracion Email--------------------------------------------------------------------------------------
 
 
 # Activa Django-Heroku.
