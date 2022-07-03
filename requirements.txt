@@ -1,4 +1,5 @@
 django
 gunicorn
 django-heroku
+django-simple-captcha
 django-registration-redux 
