@@ -29,6 +29,42 @@
       
         <!-- Template Main CSS File -->
         <link href="{% static 'Control_Center/assets/css/style.css' %}" rel="stylesheet">
+
+        <style>
+  
+          .catchap {
+            padding-bottom: 8px;
+          }
+          
+          .catchap img {
+            display: block;
+            border: 5px solid #3393ff !important;
+            padding: 0px;
+            
+            width: 185px;
+            height: 135px;
+            
+          }
+
+          #id_Captcha_1 {
+
+            margin-top: 10px;
+            display: block;
+            width: 350px;
+            height: 40px;
+            
+          }
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+          </style>
       
      
       </head>
@@ -253,12 +289,12 @@
                   <div class="col-sm-8">
                     <h2 class="w-title">Blog-Django-CMS</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Web Test</span> 
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="https://shuman-blog.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -279,12 +315,12 @@
                   <div class="col-sm-8">
                     <h2 class="w-title">Telegram Bot (Store)</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Web Test</span> 
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="https://t.me/Pepe_el_tiza_bot"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -305,12 +341,12 @@
                   <div class="col-sm-8">
                     <h2 class="w-title">Mula</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Web Test</span> 
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="https://mulax.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -331,12 +367,12 @@
                   <div class="col-sm-8">
                     <h2 class="w-title">My Portfolio</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Web Test</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="https://myportfoliopersonal.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -400,6 +436,24 @@
                               <textarea name="Text_Message" cols="40" rows="8" placeholder="Message" maxlength="400" minlength="10" class="form-control" required id="id_Text_Message"></textarea>
                             </div>
                           </div>
+
+                          <!--Message-->
+                          <div class="col-md-12 mt-4 ">
+                            <div class="form-group catchap ">
+                              <div class="row justify-content-center">
+                                {{form.Captcha}}
+                              </div>
+                              
+                              
+                              
+                              
+                            </div>
+
+                          </div>
+
+
+                          
+                          
 
                           
 
@@ -503,6 +557,8 @@
 
   <script>
 
+
+    
     $("form").on("submit",function(e){
     
     e.preventDefault();
@@ -551,8 +607,24 @@
                             return false;
                            }
                            else{
-                            console.log(data.error)
+
+                            var html = '<ul class="p-0">';
+    
+                            html += '</ul>';
+                            //console.log(data.error)
                             //MensajeError(acc,data.error);
+
+                            $.each(data.error,function(clave,valor){
+                                console.log(valor)
+                                html+='<li class="my-4" style="list-style: none;" ><span>'+ valor +'</span> </li>';
+                            }) 
+
+                            Swal.fire({
+                              title: 'Error!',
+                              html: html,
+                              icon: 'error',
+                              confirmButtonText: 'Aceptar'
+                            })
                             
                             
                            }

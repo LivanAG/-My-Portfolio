@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registration',
+    "captcha",
     'Apps.Control_Center'
+
 ]
 
 MIDDLEWARE = [
