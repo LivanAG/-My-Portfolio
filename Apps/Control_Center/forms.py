@@ -1,7 +1,7 @@
 from email.message import Message
 from django import forms
 from .models import *
-from captcha.fields import CaptchaField
+#from captcha.fields import CaptchaField
 
 class MailForm(forms.Form):
     def __init__(self,*args,**kwargs):
