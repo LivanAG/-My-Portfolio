@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@+upv*fdoxq%^^v^xqgp0e8kf=@*j0iq9un^$%r7&x67+(kk*!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["https://myportfoliolg.herokuapp.com/"]
 
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registration',
-    
     'Apps.Control_Center'
 
 ]
